@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+*.egg-info/
+dist/
+build/
+
+# Data (generated)
+data/synthetic_transactions.json
+data/customers.json
+data/evaluation_results.json
+data/diagnosis_model.pkl
+
+# Database
+*.db
+*.sqlite3
+
+# Node
+node_modules/
+.vite/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
