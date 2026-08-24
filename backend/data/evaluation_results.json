@@ -1,0 +1,152 @@
+{
+  "baseline": {
+    "total_failures": 2800,
+    "attempted": 2800,
+    "recovered": 284,
+    "recovered_amount": 100148300,
+    "false_attempts": 300,
+    "recovery_rate": 0.1014,
+    "recovered_amount_rupees": 1001483.0,
+    "false_attempt_rate": 0.1071
+  },
+  "reviveai": {
+    "total_failures": 2800,
+    "diagnosed": 2800,
+    "correct_diagnoses": 2800,
+    "attempted": 2500,
+    "skipped": 300,
+    "recovered": 1289,
+    "recovered_amount": 337358100,
+    "false_attempts": 0,
+    "recovery_rate": 0.4604,
+    "recovery_rate_attempted": 0.5156,
+    "diagnosis_accuracy": 1.0,
+    "recovered_amount_rupees": 3373581.0,
+    "false_attempt_rate": 0.0,
+    "automation_rate": 1.0
+  },
+  "comparison": {
+    "revenue_multiplier": 3.37,
+    "recovery_rate_improvement_pp": 35.9,
+    "false_attempt_reduction_pp": 10.7
+  },
+  "verification_stats": {
+    "verified": 2330,
+    "recovered": 1289,
+    "failed": 1041,
+    "total_recovered_amount_paise": 337358100,
+    "total_recovered_amount_rupees": 3373581.0,
+    "recovery_rate": 0.5532
+  },
+  "strategy_stats": {
+    "payment_link_whatsapp": 752,
+    "payment_link": 449,
+    "payment_link_email": 175,
+    "smart_retry": 827,
+    "invoice_reissue": 141,
+    "alternate_method_suggest": 87,
+    "subscription_date_shift": 69
+  },
+  "sample_audit_trail": [
+    {
+      "txn_id": "d4f07ccf",
+      "actual_type": "insufficient_funds",
+      "predicted_type": "insufficient_funds",
+      "correct": true,
+      "intervention": "payment_link_whatsapp",
+      "recovered": false,
+      "amount": 594.0,
+      "confidence": 0.9989
+    },
+    {
+      "txn_id": "db245bc1",
+      "actual_type": "network_error",
+      "predicted_type": "network_error",
+      "correct": true,
+      "intervention": "smart_retry",
+      "recovered": true,
+      "amount": 3919.0,
+      "confidence": 0.9973
+    },
+    {
+      "txn_id": "5c5fcc2a",
+      "actual_type": "insufficient_funds",
+      "predicted_type": "insufficient_funds",
+      "correct": true,
+      "intervention": "payment_link_whatsapp",
+      "recovered": true,
+      "amount": 227.0,
+      "confidence": 0.9989
+    },
+    {
+      "txn_id": "054c7ea9",
+      "actual_type": "card_expired",
+      "predicted_type": "card_expired",
+      "correct": true,
+      "intervention": "payment_link",
+      "recovered": true,
+      "amount": 4286.0,
+      "confidence": 0.9985
+    },
+    {
+      "txn_id": "f777dc9f",
+      "actual_type": "insufficient_funds",
+      "predicted_type": "insufficient_funds",
+      "correct": true,
+      "intervention": "payment_link_whatsapp",
+      "recovered": false,
+      "amount": 15949.0,
+      "confidence": 0.999
+    },
+    {
+      "txn_id": "bac93586",
+      "actual_type": "card_expired",
+      "predicted_type": "card_expired",
+      "correct": true,
+      "intervention": "payment_link_whatsapp",
+      "recovered": true,
+      "amount": 371.0,
+      "confidence": 0.9987
+    },
+    {
+      "txn_id": "1dd26888",
+      "actual_type": "insufficient_funds",
+      "predicted_type": "insufficient_funds",
+      "correct": true,
+      "intervention": "payment_link_whatsapp",
+      "recovered": false,
+      "amount": 3211.0,
+      "confidence": 0.9989
+    },
+    {
+      "txn_id": "5efaa216",
+      "actual_type": "card_expired",
+      "predicted_type": "card_expired",
+      "correct": true,
+      "intervention": "payment_link",
+      "recovered": false,
+      "amount": 885.0,
+      "confidence": 0.9983
+    },
+    {
+      "txn_id": "a1e825e2",
+      "actual_type": "auth_failed",
+      "predicted_type": "auth_failed",
+      "correct": true,
+      "intervention": "payment_link",
+      "recovered": true,
+      "amount": 1626.0,
+      "confidence": 0.9976
+    },
+    {
+      "txn_id": "dbebbc5d",
+      "actual_type": "declined_by_bank",
+      "predicted_type": "declined_by_bank",
+      "correct": true,
+      "intervention": "alternate_method_suggest",
+      "recovered": false,
+      "amount": 569.0,
+      "confidence": 0.9955
+    }
+  ]
+}
