@@ -8,7 +8,9 @@ ReviveAI is a multi-agent autonomous revenue recovery system built on Razorpay's
 2. **Selects** the optimal recovery strategy using contextual bandits (Thompson Sampling)
 3. **Executes** bounded recovery actions via Razorpay APIs
 4. **Verifies** the outcome and feeds results back to improve future decisions
+
 ## Agent Design Principles
+
 
 ### Why 4 agents instead of 1 LLM?
 

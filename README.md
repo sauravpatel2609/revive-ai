@@ -20,7 +20,6 @@ We built four distinct AI agents to handle the pipeline:
 ### Prerequisites
 - Python 3.11+
 - Node.js 20+
-- PostgreSQL 15+ (or SQLite for local dev)
 
 ### Backend Setup
 ```bash
@@ -101,9 +100,13 @@ python -m app.evaluation.run
 - **Backend**: Python, FastAPI, XGBoost, scikit-learn
 - **Frontend**: React, Vite, vanilla CSS
 - **Database**: SQLite (dev) / PostgreSQL (prod)
-- **AI**: XGBoost, Thompson Sampling Bandits, LLM (GPT-4o-mini)
-- **Payment**: Razorpay Test Mode APIs
+- **AI**: XGBoost, Thompson Sampling Contextual Bandits
+- **Payment**: Razorpay Test Mode APIs (Payment Links, Orders, Invoices, Subscriptions)
 
 ## 📝 License
 
 MIT — Built for Razorpay AI Buildathon 2026
+
+## 🔗 Links
+
+- **GitHub:** https://github.com/sauravpatel2609/revive-ai
